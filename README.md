@@ -1,12 +1,17 @@
 # VEE / PLAY — 游戏作品集
 
-个人 GitHub 游戏展示集合页，当前收录 **月痕 · 迷途之森 / MOONWILD** 与 **歧路 · 兽契 / WILDBOUND**。
+个人 GitHub 游戏展示集合页，当前收录 **歧路 · 八贤之塔 / TOWER OF THE EIGHT** 与 **月痕 · 迷途之森 / MOONWILD**。
 
 [打开集合页](https://liny0219.github.io/game-gallery/) · [GitHub](https://github.com/liny0219/game-gallery)
 
 ## 当前状态
 
-两款游戏都显示“试玩待发布”，目前只链接各自的 GitHub 项目。等待两个游戏项目各自构建并提供正式发布地址后，再接入试玩入口。不要使用已经失效的 `moonwild-play` 地址。
+两款游戏均已接入独立站点的正式试玩地址，按以下顺序展示：
+
+1. **歧路 · 八贤之塔 v0.2.0**：[在线试玩](https://liny0219.github.io/eight-sages-tower/) · [源码仓库](https://github.com/liny0219/eight-sages-tower)。
+2. **月痕 · 迷途之森 v0.3.14**：[在线试玩](https://liny0219.github.io/moonwild/) · [源码仓库](https://github.com/liny0219/moonwild)。
+
+2026-09-12 核实两个试玩页面均返回 HTTP 200，页面标题与项目相符。版本和玩法取自各项目当前 README。保持《八贤之塔》第一位，不使用旧的 `moonwild-play` 地址。
 
 **此仓库只发布集合页面、样式与展示图片，不存放或发布游戏试玩包，不重新构建游戏。**
 
@@ -46,6 +51,9 @@ python3 -m http.server 4173 --directory dist --bind 127.0.0.1
 | `repository` | 项目的 GitHub 地址 |
 | `version` | 版本号，未发布时可为 `null` |
 | `image` / `imageAlt` | 展示图相对路径与替代文本；无图时 `image` 为 `null` |
+| `imageWidth` / `imageHeight` | 素材原始宽高 |
+| `imageKind` | 正式截图用 `screenshot`，完整展示、不覆盖画面文字 |
+| `coverCaption` | 可选封面副标题 |
 | `note` | 对玩家有用的试玩状态或操作提示 |
 
 拿到并核实正式地址后，将该项目 `demoUrl` 填为地址、`status` 改为 `playable`，再更新 `note`。仅在这两个条件同时满足时，页面才显示“开始试玩”。无图项目使用文字封面。
@@ -72,6 +80,8 @@ git push
 - `.openai/hosting.json`：同一集合页的 Sites 私人预览配置。
 
 ## 素材说明
+
+`eight-sages-tower-battle.png` 来自《歧路 · 八贤之塔》的正式战斗截图 [docs/screenshots/battle.png](https://github.com/liny0219/eight-sages-tower/blob/main/docs/screenshots/battle.png)，保留完整画面，作者为 VEE / liny0219。
 
 `moonwild-forest.png` 来自 MOONWILD 的正式游戏背景 `assets/forest.png`，用于展示对应项目。[原始素材](https://github.com/liny0219/moonwild/blob/main/assets/forest.png) · [素材说明](https://github.com/liny0219/moonwild/blob/main/docs/ASSET_SOURCES.md)。没有制作或使用虚构游戏截图。
 

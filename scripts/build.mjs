@@ -8,12 +8,13 @@ const escape = value => String(value).replace(/[&<>"']/g, character => ({ '&': '
 const external = 'target="_blank" rel="noopener noreferrer"';
 function projectCard(project, index) {
   const live = project.status === 'playable' && project.demoUrl;
-  const image = project.image ? `<img class="cover-image" src="${escape(project.image)}" alt="${escape(project.imageAlt)}" width="1672" height="941" fetchpriority="high">` : '<div class="development-word" aria-hidden="true">A NEW ADVENTURE<br>IN THE MAKING</div>';
+  const image = project.image ? `<img class="cover-image" src="${escape(project.image)}" alt="${escape(project.imageAlt)}" width="${escape(project.imageWidth || 1672)}" height="${escape(project.imageHeight || 941)}" ${index === 0 ? 'fetchpriority="high"' : 'loading="lazy"'}>` : '<div class="development-word" aria-hidden="true">A NEW ADVENTURE<br>IN THE MAKING</div>';
+  const coverClass = project.image ? (project.imageKind === 'screenshot' ? 'has-screenshot' : 'has-image') : 'cover-concept';
   return `<article class="game-card" aria-labelledby="${escape(project.id)}-title">
-    <div class="game-cover ${project.image ? 'has-image' : 'cover-concept'}">
+    <div class="game-cover ${coverClass}">
       ${image}
       <div class="cover-top"><span class="project-index">NO. ${String(index + 1).padStart(2, '0')}</span><span class="status">${live ? '<span class="status-dot" aria-hidden="true"></span>在线试玩' : '试玩待发布'}</span></div>
-      <p class="cover-title" aria-hidden="true">${escape(project.englishName)}<span class="cover-caption">${project.image ? 'A JOURNEY UNDER THE MOON' : 'OCHETTE’S CARD ADVENTURE'}</span></p>
+      <p class="cover-title" aria-hidden="true">${escape(project.englishName)}${project.coverCaption ? `<span class="cover-caption">${escape(project.coverCaption)}</span>` : ''}</p>
     </div>
     <div class="game-body">
       <p class="game-kicker"><span>${escape(project.kind)}</span><span>${project.version ? `v${escape(project.version)}` : 'IN DEVELOPMENT'}</span></p>
