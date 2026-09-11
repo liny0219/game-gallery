@@ -17,7 +17,7 @@ function projectCard(project, index) {
       <p class="cover-title" aria-hidden="true">${escape(project.englishName)}${project.coverCaption ? `<span class="cover-caption">${escape(project.coverCaption)}</span>` : ''}</p>
     </div>
     <div class="game-body">
-      <p class="game-kicker"><span>${escape(project.kind)}</span><span>${project.version ? `v${escape(project.version)}` : 'IN DEVELOPMENT'}</span></p>
+      <p class="game-kicker"><span>${escape(project.kind)}</span></p>
       <h3 id="${escape(project.id)}-title">${escape(project.name)}</h3>
       <p class="description">${escape(project.description)}</p>
       <ul class="tags" aria-label="游戏特色">${project.tags.map(tag => `<li>${escape(tag)}</li>`).join('')}</ul>

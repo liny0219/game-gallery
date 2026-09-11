@@ -4,14 +4,13 @@
     "name": "歧路 · 八贤之塔",
     "englishName": "TOWER OF THE EIGHT",
     "kind": "卡牌构筑 · 爬塔冒险",
-    "description": "选择欧休提的三条职业路线，用 72 张卡牌、32 件遗物与 12 种药剂构筑流派。闯过三幕登塔试炼，迎接学者猫莱拉的最终考核。",
+    "description": "带领欧休提踏上登塔之旅，在不同职业路线间构筑牌组，运用遗物与药剂应对试炼，迎接学者猫莱拉的最终考核。",
     "tags": [
-      "三职业路线",
+      "职业分支",
       "卡牌构筑",
-      "三幕登塔"
+      "登塔试炼"
     ],
     "status": "playable",
-    "version": "0.2.0",
     "image": "assets/eight-sages-tower-battle.png",
     "imageAlt": "八贤之塔正式战斗画面：欧休提对阵棘背野猪，底部展示手牌、能量与增幅操作",
     "imageWidth": 1280,
@@ -26,14 +25,13 @@
     "name": "月痕 · 迷途之森",
     "englishName": "MOONWILD",
     "kind": "像素回合制 RPG",
-    "description": "与六位旅人深入追忆之书，在月夜森林与古老遗迹间追踪黑月污染。击破弱点，积蓄 BP，用协作技能改写战局。",
+    "description": "与旅人们深入追忆之书，探索月夜森林与古老遗迹。击破弱点，积蓄 BP，用协作技能对抗黑月污染。",
     "tags": [
-      "六人冒险",
+      "队伍编成",
       "弱点破盾",
-      "三章旅程"
+      "像素探索"
     ],
     "status": "playable",
-    "version": "0.3.14",
     "image": "assets/moonwild-forest.png",
     "imageAlt": "月痕的像素月夜森林，巨树间可见蓝色遗迹与瀑布",
     "repository": "https://github.com/liny0219/moonwild",

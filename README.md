@@ -8,10 +8,10 @@
 
 两款游戏均已接入独立站点的正式试玩地址，按以下顺序展示：
 
-1. **歧路 · 八贤之塔 v0.2.0**：[在线试玩](https://liny0219.github.io/eight-sages-tower/) · [源码仓库](https://github.com/liny0219/eight-sages-tower)。
-2. **月痕 · 迷途之森 v0.3.14**：[在线试玩](https://liny0219.github.io/moonwild/) · [源码仓库](https://github.com/liny0219/moonwild)。
+1. **歧路 · 八贤之塔**：[在线试玩](https://liny0219.github.io/eight-sages-tower/) · [源码仓库](https://github.com/liny0219/eight-sages-tower)。
+2. **月痕 · 迷途之森**：[在线试玩](https://liny0219.github.io/moonwild/) · [源码仓库](https://github.com/liny0219/moonwild)。
 
-2026-09-12 核实两个试玩页面均返回 HTTP 200，页面标题与项目相符。版本和玩法取自各项目当前 README。保持《八贤之塔》第一位，不使用旧的 `moonwild-play` 地址。
+2026-09-12 核实两个试玩页面均返回 HTTP 200，页面标题与项目相符。页面仅保留简短介绍和稳定试玩地址，不展示或维护游戏版本号、卡牌数量等随版本变化的数据。游戏更新时，只要试玩地址不变，就无需重新发布集合页。保持《八贤之塔》第一位，不使用旧的 `moonwild-play` 地址。
 
 **此仓库只发布集合页面、样式与展示图片，不存放或发布游戏试玩包，不重新构建游戏。**
 
@@ -19,7 +19,7 @@
 
 - 手机、平板、桌面共用同一页面，卡片按可读宽度自动切换单列或多列。
 - 支持 320px 窄屏与手机横屏；正文自然换行，封面文字可以撑开容器，不能用裁剪隐藏布局问题。
-- 保留用户缩放，200% 字号下页头、封面、分类和版本信息均可换行；页面不应横向溢出或遮挡文字。
+- 保留用户缩放，200% 字号下页头、封面与分类信息均可换行；页面不应横向溢出或遮挡文字。
 - 主要项目按钮至少 48px 高，其他常用链接至少 44px 高；手机上项目按钮铺满卡片内容区。
 - 使用安全区边距适配刘海屏；仅为精确指针启用悬停位移，尊重减少动态效果设置。
 
@@ -49,7 +49,6 @@ python3 -m http.server 4173 --directory dist --bind 127.0.0.1
 | `status` | `development` 开发中、`awaiting-demo` 等待发布、`playable` 已有可用试玩 |
 | `demoUrl` | 正式 HTTPS 试玩地址，未发布时必须为 `null` |
 | `repository` | 项目的 GitHub 地址 |
-| `version` | 版本号，未发布时可为 `null` |
 | `image` / `imageAlt` | 展示图相对路径与替代文本；无图时 `image` 为 `null` |
 | `imageWidth` / `imageHeight` | 素材原始宽高 |
 | `imageKind` | 正式截图用 `screenshot`，完整展示、不覆盖画面文字 |
