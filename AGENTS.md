@@ -9,4 +9,5 @@
 - Do not show or maintain game version numbers or release-specific content counts in project cards. Keep introductions brief and link to the stable official demo URLs; routine game updates must not require gallery changes.
 - For future projects, keep `demoUrl` null until a verified official HTTPS URL is provided; only then set `status: "playable"`.
 - Update `src/`, then run `node scripts/build.mjs` and `node scripts/check.mjs`. Commit the generated `dist/` alongside its source. Temporary QA fixtures belong in ignored `work/` and must not be published.
-- Preserve the existing Sites project ID and GitHub Pages workflow; never recreate the site for an edit.
+- GitHub Pages at `https://liny0219.github.io/game-gallery/` is the default public publishing and sharing destination. Visitors must not need to log in. Publish future updates through the existing GitHub Pages workflow and use this URL for browser handoff and final links.
+- The existing `.openai/hosting.json` is a historical private Sites preview configuration. Preserve its project ID, but do not deploy or share that preview unless the user explicitly requests Sites again.

@@ -4,6 +4,8 @@
 
 [打开集合页](https://liny0219.github.io/game-gallery/) · [GitHub](https://github.com/liny0219/game-gallery)
 
+**正式公开地址为 GitHub Pages，任何访客均可直接打开，无需登录 GitHub 或 ChatGPT。** 后续更新默认发布到此地址，分享时也使用此地址。
+
 ## 当前状态
 
 两款游戏均已接入独立站点的正式试玩地址，按以下顺序展示：
@@ -76,7 +78,7 @@ git push
 - `src/assets/`：随页面发布的展示素材。
 - `dist/`：生成的静态网站（纳入 Git，构建时会清空重建）。
 - `scripts/check.mjs`：检查项目状态、地址、缺失资源，并阻止试玩包进入发布目录。
-- `.openai/hosting.json`：同一集合页的 Sites 私人预览配置。
+- `.openai/hosting.json`：保留的历史 Sites 私人预览配置；该预览需要登录，后续不再默认发布或分享，正式入口使用上方的 GitHub Pages 地址。
 
 ## 素材说明
 
