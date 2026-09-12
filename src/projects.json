@@ -1,26 +1,5 @@
 [
   {
-    "id": "eight-sages-tower",
-    "name": "歧路 · 八贤之塔",
-    "englishName": "TOWER OF THE EIGHT",
-    "kind": "卡牌构筑 · 爬塔冒险",
-    "description": "带领欧休提踏上登塔之旅，在不同职业路线间构筑牌组，运用遗物与药剂应对试炼，迎接学者猫莱拉的最终考核。",
-    "tags": [
-      "职业分支",
-      "卡牌构筑",
-      "登塔试炼"
-    ],
-    "status": "playable",
-    "image": "assets/eight-sages-tower-battle.png",
-    "imageAlt": "八贤之塔正式战斗画面：欧休提对阵棘背野猪，底部展示手牌、能量与增幅操作",
-    "imageWidth": 1280,
-    "imageHeight": 800,
-    "imageKind": "screenshot",
-    "repository": "https://github.com/liny0219/eight-sages-tower",
-    "demoUrl": "https://liny0219.github.io/eight-sages-tower/",
-    "note": "独立游戏站点 · 浏览器直接试玩"
-  },
-  {
     "id": "moonwild",
     "name": "月痕 · 迷途之森",
     "englishName": "MOONWILD",
@@ -40,5 +19,26 @@
     "coverCaption": "A JOURNEY UNDER THE MOON",
     "imageWidth": 1672,
     "imageHeight": 941
+  },
+  {
+    "id": "eight-sages-tower",
+    "name": "歧路 · 八贤之塔",
+    "englishName": "TOWER OF THE EIGHT",
+    "kind": "卡牌构筑 · 爬塔冒险",
+    "description": "带领欧休提踏上登塔之旅，在不同职业路线间构筑牌组，运用遗物与药剂应对试炼，迎接学者猫莱拉的最终考核。",
+    "tags": [
+      "职业分支",
+      "卡牌构筑",
+      "登塔试炼"
+    ],
+    "status": "playable",
+    "image": "assets/eight-sages-tower-battle.png",
+    "imageAlt": "八贤之塔正式战斗画面：欧休提对阵棘背野猪，底部展示手牌、能量与增幅操作",
+    "imageWidth": 1280,
+    "imageHeight": 800,
+    "imageKind": "screenshot",
+    "repository": "https://github.com/liny0219/eight-sages-tower",
+    "demoUrl": "https://liny0219.github.io/eight-sages-tower/",
+    "note": "独立游戏站点 · 浏览器直接试玩"
   }
 ]
