@@ -60,6 +60,8 @@ python3 -m http.server 4173 --directory dist --bind 127.0.0.1
 
 拿到并核实正式地址后，将该项目 `demoUrl` 填为地址、`status` 改为 `playable`，再更新 `note`。仅在这两个条件同时满足时，页面才显示“开始试玩”。无图项目使用文字封面。
 
+已上线项目的封面显示项目编号，试玩与构建仓库入口集中在卡片底部的可点击链接中。
+
 修改后运行构建和检查，再提交并推送：
 
 ```sh
@@ -83,7 +85,7 @@ git push
 
 ## 素材说明
 
-`eight-sages-tower-battle.png` 来自《歧路 · 八贤之塔》的正式战斗截图（原文件 `docs/screenshots/battle.png`，现随本集合页保存），保留完整画面，作者为 VEE / liny0219。
+`eight-sages-tower-battle-2b91a5e5.png` 是项目提供的真实游戏战斗截图：欧休提在狩人路线对阵大花与蓄养花芽。保留完整 1280×800（16:10）画面，未经裁切或改写游戏状态；作者为 VEE / liny0219，原作角色与相关素材权利归各自权利人所有。图片 SHA-256：`2b91a5e54deac8d9cf6aa4b68a8b36c3b2590ac91ead7c41d21564f52a9210ed`，文件名包含内容哈希以避免旧图缓存。
 
 `moonwild-forest.png` 来自 MOONWILD 的正式游戏背景（原文件 `assets/forest.png`，现随本集合页保存），用于展示 VEE / liny0219 的对应作品，仅供非商业学习交流。原作角色与相关素材仍归各自权利人所有，保留[项目署名](https://github.com/liny0219/moonwild-web/blob/main/legal/NOTICE)与[素材及第三方许可说明](https://github.com/liny0219/moonwild-web/blob/main/legal/THIRD_PARTY_NOTICES.md)。没有制作或使用虚构游戏截图。
 

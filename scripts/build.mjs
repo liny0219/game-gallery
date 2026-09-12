@@ -14,7 +14,7 @@ function projectCard(project, index) {
   return `<article class="game-card" aria-labelledby="${escape(project.id)}-title">
     <div class="game-cover ${coverClass}">
       ${image}
-      <div class="cover-top"><span class="project-index">NO. ${String(index + 1).padStart(2, '0')}</span><span class="status">${live ? '<span class="status-dot" aria-hidden="true"></span>在线试玩' : '试玩待发布'}</span></div>
+      <div class="cover-top"><span class="project-index">NO. ${String(index + 1).padStart(2, '0')}</span>${live ? '' : '<span class="status">试玩待发布</span>'}</div>
       <p class="cover-title" aria-hidden="true">${escape(project.englishName)}${project.coverCaption ? `<span class="cover-caption">${escape(project.coverCaption)}</span>` : ''}</p>
     </div>
     <div class="game-body">
