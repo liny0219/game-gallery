@@ -11,7 +11,7 @@
 两款游戏均已接入独立站点的正式试玩地址，按以下顺序展示：
 
 1. **月痕 · 迷途之森**：[在线试玩](https://liny0219.github.io/moonwild/) · [源码仓库](https://github.com/liny0219/moonwild)。
-2. **歧路 · 八贤之塔**：[在线试玩](https://liny0219.github.io/eight-sages-tower/) · [源码仓库](https://github.com/liny0219/eight-sages-tower)。
+2. **歧路 · 八贤之塔**：[Web 试玩](https://liny0219.github.io/eight-sages-tower-play/) · [构建仓库](https://github.com/liny0219/eight-sages-tower-play)。公开仓库仅提供 Web 构建，游戏源码不公开。
 
 2026-09-12 核实两个试玩页面均返回 HTTP 200，页面标题与项目相符。页面仅保留简短介绍和稳定试玩地址，不展示或维护游戏版本号、卡牌数量等随版本变化的数据。游戏更新时，只要试玩地址不变，就无需重新发布集合页。保持《月痕》第一位，不使用旧的 `moonwild-play` 地址。
 
@@ -50,7 +50,8 @@ python3 -m http.server 4173 --directory dist --bind 127.0.0.1
 | `kind` / `description` / `tags` | 类型、介绍与特色标签 |
 | `status` | `development` 开发中、`awaiting-demo` 等待发布、`playable` 已有可用试玩 |
 | `demoUrl` | 正式 HTTPS 试玩地址，未发布时必须为 `null` |
-| `repository` | 项目的 GitHub 地址 |
+| `repository` | 项目的公开 GitHub 地址 |
+| `repositoryLabel` | 可选仓库链接文字，默认 `GitHub 项目`；仅发布构建时使用 `构建仓库` |
 | `image` / `imageAlt` | 展示图相对路径与替代文本；无图时 `image` 为 `null` |
 | `imageWidth` / `imageHeight` | 素材原始宽高 |
 | `imageKind` | 正式截图用 `screenshot`，完整展示、不覆盖画面文字 |
@@ -82,7 +83,7 @@ git push
 
 ## 素材说明
 
-`eight-sages-tower-battle.png` 来自《歧路 · 八贤之塔》的正式战斗截图 [docs/screenshots/battle.png](https://github.com/liny0219/eight-sages-tower/blob/main/docs/screenshots/battle.png)，保留完整画面，作者为 VEE / liny0219。
+`eight-sages-tower-battle.png` 来自《歧路 · 八贤之塔》的正式战斗截图（原文件 `docs/screenshots/battle.png`，现随本集合页保存），保留完整画面，作者为 VEE / liny0219。
 
 `moonwild-forest.png` 来自 MOONWILD 的正式游戏背景 `assets/forest.png`，用于展示对应项目。[原始素材](https://github.com/liny0219/moonwild/blob/main/assets/forest.png) · [素材说明](https://github.com/liny0219/moonwild/blob/main/docs/ASSET_SOURCES.md)。没有制作或使用虚构游戏截图。
 

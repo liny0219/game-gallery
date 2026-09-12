@@ -37,8 +37,9 @@
     "imageWidth": 1280,
     "imageHeight": 800,
     "imageKind": "screenshot",
-    "repository": "https://github.com/liny0219/eight-sages-tower",
-    "demoUrl": "https://liny0219.github.io/eight-sages-tower/",
-    "note": "独立游戏站点 · 浏览器直接试玩"
+    "repository": "https://github.com/liny0219/eight-sages-tower-play",
+    "demoUrl": "https://liny0219.github.io/eight-sages-tower-play/",
+    "note": "独立游戏站点 · 浏览器直接试玩",
+    "repositoryLabel": "构建仓库"
   }
 ]

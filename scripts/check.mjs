@@ -14,6 +14,7 @@ for (const project of projects) {
   for (const field of ['name', 'englishName', 'kind', 'description', 'note']) {
     assert(typeof project[field] === 'string' && project[field].trim(), `${project.id}: ${field} is required.`);
   }
+  if (project.repositoryLabel !== undefined) assert(typeof project.repositoryLabel === 'string' && project.repositoryLabel.trim(), `${project.id}: repositoryLabel must be nonempty text.`);
   assert(states.has(project.status), `${project.id}: invalid status.`);
   assert(Array.isArray(project.tags) && project.tags.every(tag => typeof tag === 'string' && tag.trim()), `${project.id}: invalid tags.`);
   assert(new URL(project.repository).origin === 'https://github.com', `${project.id}: use the GitHub repository URL.`);

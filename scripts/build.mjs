@@ -8,6 +8,7 @@ const escape = value => String(value).replace(/[&<>"']/g, character => ({ '&': '
 const external = 'target="_blank" rel="noopener noreferrer"';
 function projectCard(project, index) {
   const live = project.status === 'playable' && project.demoUrl;
+  const repositoryLabel = escape(project.repositoryLabel || 'GitHub 项目');
   const image = project.image ? `<img class="cover-image" src="${escape(project.image)}" alt="${escape(project.imageAlt)}" width="${escape(project.imageWidth || 1672)}" height="${escape(project.imageHeight || 941)}" ${index === 0 ? 'fetchpriority="high"' : 'loading="lazy"'}>` : '<div class="development-word" aria-hidden="true">A NEW ADVENTURE<br>IN THE MAKING</div>';
   const coverClass = project.image ? (project.imageKind === 'screenshot' ? 'has-screenshot' : 'has-image') : 'cover-concept';
   return `<article class="game-card" aria-labelledby="${escape(project.id)}-title">
@@ -21,7 +22,7 @@ function projectCard(project, index) {
       <h3 id="${escape(project.id)}-title">${escape(project.name)}</h3>
       <p class="description">${escape(project.description)}</p>
       <ul class="tags" aria-label="游戏特色">${project.tags.map(tag => `<li>${escape(tag)}</li>`).join('')}</ul>
-      <div class="game-actions">${live ? `<a class="play-link" href="${escape(project.demoUrl)}" ${external} aria-label="开始试玩${escape(project.name)}（新窗口）"><span aria-hidden="true">▶</span>开始试玩</a><a class="repo-link" href="${escape(project.repository)}" ${external} aria-label="查看${escape(project.name)}的 GitHub 项目（新窗口）">GitHub 项目 <span aria-hidden="true">↗</span></a>` : `<a class="repo-primary" href="${escape(project.repository)}" ${external} aria-label="查看${escape(project.name)}的 GitHub 项目（新窗口）">查看 GitHub 项目 <span aria-hidden="true">↗</span></a>`}</div>
+      <div class="game-actions">${live ? `<a class="play-link" href="${escape(project.demoUrl)}" ${external} aria-label="开始试玩${escape(project.name)}（新窗口）"><span aria-hidden="true">▶</span>开始试玩</a><a class="repo-link" href="${escape(project.repository)}" ${external} aria-label="查看${escape(project.name)}的 ${repositoryLabel}（新窗口）">${repositoryLabel} <span aria-hidden="true">↗</span></a>` : `<a class="repo-primary" href="${escape(project.repository)}" ${external} aria-label="查看${escape(project.name)}的 ${repositoryLabel}（新窗口）">查看 ${repositoryLabel} <span aria-hidden="true">↗</span></a>`}</div>
       <p class="game-note">${escape(project.note)}</p>
     </div>
   </article>`;
