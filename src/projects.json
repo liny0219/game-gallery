@@ -13,12 +13,13 @@
     "status": "playable",
     "image": "assets/moonwild-forest.png",
     "imageAlt": "月痕的像素月夜森林，巨树间可见蓝色遗迹与瀑布",
-    "repository": "https://github.com/liny0219/moonwild",
-    "demoUrl": "https://liny0219.github.io/moonwild/",
+    "repository": "https://github.com/liny0219/moonwild-web",
+    "demoUrl": "https://liny0219.github.io/moonwild-web/",
     "note": "独立游戏站点 · 浏览器直接试玩",
     "coverCaption": "A JOURNEY UNDER THE MOON",
     "imageWidth": 1672,
-    "imageHeight": 941
+    "imageHeight": 941,
+    "repositoryLabel": "构建仓库"
   },
   {
     "id": "eight-sages-tower",

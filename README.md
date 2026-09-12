@@ -10,10 +10,10 @@
 
 两款游戏均已接入独立站点的正式试玩地址，按以下顺序展示：
 
-1. **月痕 · 迷途之森**：[在线试玩](https://liny0219.github.io/moonwild/) · [源码仓库](https://github.com/liny0219/moonwild)。
+1. **月痕 · 迷途之森**：[Web 试玩](https://liny0219.github.io/moonwild-web/) · [构建仓库](https://github.com/liny0219/moonwild-web)。公开仓库仅提供 Web 构建与必要许可，游戏源码不公开。
 2. **歧路 · 八贤之塔**：[Web 试玩](https://liny0219.github.io/eight-sages-tower-play/) · [构建仓库](https://github.com/liny0219/eight-sages-tower-play)。公开仓库仅提供 Web 构建，游戏源码不公开。
 
-2026-09-12 核实两个试玩页面均返回 HTTP 200，页面标题与项目相符。页面仅保留简短介绍和稳定试玩地址，不展示或维护游戏版本号、卡牌数量等随版本变化的数据。游戏更新时，只要试玩地址不变，就无需重新发布集合页。保持《月痕》第一位，不使用旧的 `moonwild-play` 地址。
+2026-09-12 核实两个试玩页面均返回 HTTP 200，页面标题与项目相符。页面仅保留简短介绍和稳定试玩地址，不展示或维护游戏版本号、卡牌数量等随版本变化的数据。游戏更新时，只要试玩地址不变，就无需重新发布集合页。保持《月痕》第一位，不使用旧的 `/moonwild/` 或 `moonwild-play` 地址。
 
 **此仓库只发布集合页面、样式与展示图片，不存放或发布游戏试玩包，不重新构建游戏。**
 
@@ -85,6 +85,6 @@ git push
 
 `eight-sages-tower-battle.png` 来自《歧路 · 八贤之塔》的正式战斗截图（原文件 `docs/screenshots/battle.png`，现随本集合页保存），保留完整画面，作者为 VEE / liny0219。
 
-`moonwild-forest.png` 来自 MOONWILD 的正式游戏背景 `assets/forest.png`，用于展示对应项目。[原始素材](https://github.com/liny0219/moonwild/blob/main/assets/forest.png) · [素材说明](https://github.com/liny0219/moonwild/blob/main/docs/ASSET_SOURCES.md)。没有制作或使用虚构游戏截图。
+`moonwild-forest.png` 来自 MOONWILD 的正式游戏背景（原文件 `assets/forest.png`，现随本集合页保存），用于展示 VEE / liny0219 的对应作品，仅供非商业学习交流。原作角色与相关素材仍归各自权利人所有，保留[项目署名](https://github.com/liny0219/moonwild-web/blob/main/legal/NOTICE)与[素材及第三方许可说明](https://github.com/liny0219/moonwild-web/blob/main/legal/THIRD_PARTY_NOTICES.md)。没有制作或使用虚构游戏截图。
 
 本站为非官方、非商业同人作品集合。原作角色与相关素材权利归各自权利人所有；本仓库不为游戏素材另行授予许可。
