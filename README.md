@@ -85,7 +85,7 @@ git push
 
 ## 素材说明
 
-`eight-sages-tower-battle-7c3ff493.jpg` 是项目提供的正式 Web 游戏画布截图，展示像素风的欧休提、大花与蓄养花芽战斗场景。保留完整 624×390（16:10）画面，未经本集合页裁切或修改；作者为 VEE / liny0219，原作角色与相关素材权利归各自权利人所有。图片 SHA-256：`7c3ff493462b412b5747d19d223780c52b706167ee0f4f2a441b750b5640107e`，文件名包含内容哈希以避免旧图缓存。
+`eight-sages-tower-battle-89ec5422.jpg` 是项目提供的正式 Web 游戏画布截图，展示像素风的欧休提、大花与蓄养花芽战斗场景。保留完整 624×390（16:10）画面，未经本集合页裁切或修改；作者为 VEE / liny0219，原作角色与相关素材权利归各自权利人所有。图片 SHA-256：`89ec5422d95531c793d1acf5fb2dc88865f3844ac7512201635d4f1124eb1916`，文件名包含内容哈希以避免旧图缓存。
 
 `moonwild-forest.png` 来自 MOONWILD 的正式游戏背景（原文件 `assets/forest.png`，现随本集合页保存），用于展示 VEE / liny0219 的对应作品，仅供非商业学习交流。原作角色与相关素材仍归各自权利人所有，保留[项目署名](https://github.com/liny0219/moonwild-web/blob/main/legal/NOTICE)与[素材及第三方许可说明](https://github.com/liny0219/moonwild-web/blob/main/legal/THIRD_PARTY_NOTICES.md)。没有制作或使用虚构游戏截图。
 
