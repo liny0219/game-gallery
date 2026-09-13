@@ -85,7 +85,7 @@ git push
 
 ## 素材说明
 
-`eight-sages-tower-battle-6c4a03ef.jpg` 是项目提供的正式 Web 游戏画布截图，展示像素风的欧休提在遗迹中对阵冰晶精灵与影尾狐的数字手牌战斗。保留完整 844×390画面，未经本集合页裁切或修改；作者为 VEE / liny0219，原作角色与相关素材权利归各自权利人所有。图片 SHA-256：`6c4a03ef41d7318bad2030f4fdcfbf4b9ca9ff11867a2327b4ceea596e6b7ec6`，文件名包含内容哈希以避免旧图缓存。
+`eight-sages-tower-battle-4c6bebcf.jpg` 是项目提供的正式 Web 游戏画布截图，展示像素风的欧休提对阵赤岩蜥与影尾狐，以及带图案的手牌、攻击短标与独立翻页按钮。保留完整 844×390 画面，未经本集合页裁切或修改；作者为 VEE / liny0219，原作角色与相关素材权利归各自权利人所有。图片 SHA-256：`4c6bebcf5fc5d8d8a7b544402d4588c0d9a8991102e61c411b991c9c1e1752b9`，文件名包含内容哈希以避免旧图缓存。
 
 `moonwild-forest.png` 来自 MOONWILD 的正式游戏背景（原文件 `assets/forest.png`，现随本集合页保存），用于展示 VEE / liny0219 的对应作品，仅供非商业学习交流。原作角色与相关素材仍归各自权利人所有，保留[项目署名](https://github.com/liny0219/moonwild-web/blob/main/legal/NOTICE)与[素材及第三方许可说明](https://github.com/liny0219/moonwild-web/blob/main/legal/THIRD_PARTY_NOTICES.md)。没有制作或使用虚构游戏截图。
 
