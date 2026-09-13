@@ -85,7 +85,7 @@ git push
 
 ## 素材说明
 
-`eight-sages-tower-battle-19c866c8.jpg` 来自正式在线试玩页面的实际战斗截图，通过页面“继续旅程”进入，展示欧休提对阵被准星锁定的棘背野猪，以及图案手牌和 BP 增幅面板。保留完整 1280×720 画面，未经本集合页裁切或修改；作者为 VEE / liny0219，原作角色与相关素材权利归各自权利人所有。图片 SHA-256：`19c866c83f4ae2d5ee9d426e754e274ee47f67eb968d4e76be1f79783f1f05ab`，文件名包含内容哈希以避免旧图缓存。
+`eight-sages-tower-battle-d3531125.jpg` 来自正式在线试玩页面的实际战斗截图，通过页面“继续旅程”进入，展示欧休提对阵被准星锁定的棘背野猪，以及图案手牌和 BP 增幅面板。保留完整 1280×720 画面，未经本集合页裁切或修改；作者为 VEE / liny0219，原作角色与相关素材权利归各自权利人所有。图片 SHA-256：`d353112557236670407a3500e5f0dc2bd8cb3ba4007a14e2fd654d4251546839`，文件名包含内容哈希以避免旧图缓存。
 
 `moonwild-forest.png` 来自 MOONWILD 的正式游戏背景（原文件 `assets/forest.png`，现随本集合页保存），用于展示 VEE / liny0219 的对应作品，仅供非商业学习交流。原作角色与相关素材仍归各自权利人所有，保留[项目署名](https://github.com/liny0219/moonwild-web/blob/main/legal/NOTICE)与[素材及第三方许可说明](https://github.com/liny0219/moonwild-web/blob/main/legal/THIRD_PARTY_NOTICES.md)。没有制作或使用虚构游戏截图。
 
