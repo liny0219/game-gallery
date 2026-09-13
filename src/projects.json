@@ -26,15 +26,15 @@
     "name": "歧路 · 八贤之塔",
     "englishName": "TOWER OF THE EIGHT",
     "kind": "卡牌构筑 · 爬塔冒险",
-    "description": "带领欧休提踏上登塔之旅，在不同职业路线间构筑牌组，运用遗物与药剂应对试炼，迎接学者猫莱拉的最终考核。",
+    "description": "跟随欧休提踏上登塔之旅，选择职业、构筑牌组，运用数字与颜色牌面、BP 增幅和遗物药剂应对试炼。",
     "tags": [
       "职业分支",
       "卡牌构筑",
       "登塔试炼"
     ],
     "status": "playable",
-    "image": "assets/eight-sages-tower-battle-5d9e5b09.jpg",
-    "imageAlt": "八贤之塔像素风战斗画面：欧休提对阵霜影狼，底部展示手牌和结束回合按钮",
+    "image": "assets/eight-sages-tower-battle-d584b2f8.jpg",
+    "imageAlt": "八贤之塔像素风战斗画面：欧休提对阵棘背野猪，底部展示数字牌面与 BP 增幅提示",
     "imageWidth": 624,
     "imageHeight": 390,
     "imageKind": "screenshot",
