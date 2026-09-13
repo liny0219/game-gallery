@@ -33,9 +33,9 @@
       "登塔试炼"
     ],
     "status": "playable",
-    "image": "assets/eight-sages-tower-battle-e935ae43.jpg",
-    "imageAlt": "八贤之塔像素风战斗画面：欧休提对阵棘背野猪，底部展示数字牌面与 BP 增幅提示",
-    "imageWidth": 624,
+    "image": "assets/eight-sages-tower-battle-6c4a03ef.jpg",
+    "imageAlt": "八贤之塔像素风战斗画面：欧休提在遗迹中对阵冰晶精灵与影尾狐，底部展示数字手牌与结束回合按钮",
+    "imageWidth": 844,
     "imageHeight": 390,
     "imageKind": "screenshot",
     "repository": "https://github.com/liny0219/eight-sages-tower-play",
