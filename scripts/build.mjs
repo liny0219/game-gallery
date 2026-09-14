@@ -6,11 +6,21 @@ const root = fileURLToPath(new URL('../', import.meta.url));
 const projects = JSON.parse(await readFile(path.join(root, 'src/projects.json'), 'utf8'));
 const escape = value => String(value).replace(/[&<>"']/g, character => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[character]);
 const external = 'target="_blank" rel="noopener noreferrer"';
+function projectTrailer(project) {
+  return `<div class="trailer" data-trailer>
+        <div class="trailer-frame">
+          <video id="${escape(project.id)}-trailer" class="trailer-video" data-src="${escape(project.video)}" poster="${escape(project.videoPoster)}" width="${escape(project.videoWidth)}" height="${escape(project.videoHeight)}" preload="none" playsinline tabindex="-1" aria-hidden="true" aria-label="${escape(project.name)}实机宣传视频"></video>
+          <button class="trailer-play" type="button" aria-controls="${escape(project.id)}-trailer" aria-label="播放视频：${escape(project.name)}" hidden><span aria-hidden="true">▶</span><span data-play-label>播放视频</span></button>
+        </div>
+        <p class="trailer-status" role="status" aria-live="polite" hidden></p>
+        <noscript><a class="trailer-fallback" href="${escape(project.video)}">播放${escape(project.name)}实机宣传视频</a></noscript>
+      </div>`;
+}
 function projectCard(project, index) {
   const live = project.status === 'playable' && project.demoUrl;
   const repositoryLabel = escape(project.repositoryLabel || 'GitHub 项目');
-  const image = project.image ? `<img class="cover-image" src="${escape(project.image)}" alt="${escape(project.imageAlt)}" width="${escape(project.imageWidth || 1672)}" height="${escape(project.imageHeight || 941)}" ${index === 0 ? 'fetchpriority="high"' : 'loading="lazy"'}>` : '<div class="development-word" aria-hidden="true">A NEW ADVENTURE<br>IN THE MAKING</div>';
-  const coverClass = project.image ? (project.imageKind === 'screenshot' ? 'has-screenshot' : 'has-image') : 'cover-concept';
+  const image = project.video ? projectTrailer(project) : project.image ? `<img class="cover-image" src="${escape(project.image)}" alt="${escape(project.imageAlt)}" width="${escape(project.imageWidth || 1672)}" height="${escape(project.imageHeight || 941)}" ${index === 0 ? 'fetchpriority="high"' : 'loading="lazy"'}>` : '<div class="development-word" aria-hidden="true">A NEW ADVENTURE<br>IN THE MAKING</div>';
+  const coverClass = project.video ? 'has-screenshot has-video' : project.image ? (project.imageKind === 'screenshot' ? 'has-screenshot' : 'has-image') : 'cover-concept';
   return `<article class="game-card" aria-labelledby="${escape(project.id)}-title">
     <div class="game-cover ${coverClass}">
       ${image}
@@ -33,6 +43,7 @@ await rm(path.join(root, 'dist'), { recursive: true, force: true });
 await mkdir(path.join(root, 'dist'), { recursive: true });
 await writeFile(path.join(root, 'dist/index.html'), html);
 await cp(path.join(root, 'src/styles.css'), path.join(root, 'dist/styles.css'));
+await cp(path.join(root, 'src/player.js'), path.join(root, 'dist/player.js'));
 await cp(path.join(root, 'src/assets'), path.join(root, 'dist/assets'), { recursive: true });
 await writeFile(path.join(root, 'dist/.nojekyll'), '');
 console.log(`Built ${projects.length} projects into dist/.`);

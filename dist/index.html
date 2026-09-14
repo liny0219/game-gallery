@@ -11,6 +11,7 @@
   <title>VEE / PLAY — 游戏作品集</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
+  <script src="player.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#games">跳至游戏作品</a>
@@ -46,8 +47,15 @@
     </div>
   </article>
 <article class="game-card" aria-labelledby="eight-sages-tower-title">
-    <div class="game-cover has-screenshot">
-      <img class="cover-image" src="assets/eight-sages-tower-battle-1016a303.jpg" alt="八贤之塔正式网页战斗画面：欧休提对阵被准星锁定的棘背野猪，底部展示图案手牌、BP 增幅面板与结束回合按钮" width="1280" height="720" loading="lazy">
+    <div class="game-cover has-screenshot has-video">
+      <div class="trailer" data-trailer>
+        <div class="trailer-frame">
+          <video id="eight-sages-tower-trailer" class="trailer-video" data-src="assets/eight-sages-tower-trailer-f5529cfd.mp4" poster="assets/eight-sages-tower-trailer-poster-9a1234e3.jpg" width="1280" height="800" preload="none" playsinline tabindex="-1" aria-hidden="true" aria-label="歧路 · 八贤之塔实机宣传视频"></video>
+          <button class="trailer-play" type="button" aria-controls="eight-sages-tower-trailer" aria-label="播放视频：歧路 · 八贤之塔" hidden><span aria-hidden="true">▶</span><span data-play-label>播放视频</span></button>
+        </div>
+        <p class="trailer-status" role="status" aria-live="polite" hidden></p>
+        <noscript><a class="trailer-fallback" href="assets/eight-sages-tower-trailer-f5529cfd.mp4">播放歧路 · 八贤之塔实机宣传视频</a></noscript>
+      </div>
       <div class="cover-top"><span class="project-index">NO. 02</span></div>
       <p class="cover-title" aria-hidden="true">TOWER OF THE EIGHT</p>
     </div>
